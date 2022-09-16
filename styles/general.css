@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,700;1,400&family=Rubik:wght@400;500;700&display=swap');
+
+:root {
+     /* ##Primary */
+--Deep-Purpul: 	hsl(296, 100%, 12%);
+--Light-Green: hsl(151, 100%, 50%);
+--White: hsl(0, 0%, 100%);
+--Dark-red: hsl(339, 100%, 46%);
+--Light-Blue: hsl(182, 100%, 51%);
+
+
+/* *=========== Font and typograohy ========* */
+
+--body-font:'Rubik', sans-serif;
+--border-radius: 0.5rem;
+
+/* ================ Font Weight ============ */
+--font-small: 400;
+--font-medium: 500;
+--font-semi-bold: 600;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    margin:0;
+    padding:0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; 
+    scroll-behavior: smooth;
+    font-family: var(--body-font);
+}
+

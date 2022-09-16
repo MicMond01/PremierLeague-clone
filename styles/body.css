@@ -1,0 +1,931 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+
+:root {
+    /* ##Primary */
+--Deep-Purpul: 	hsl(296, 100%, 12%);
+--light-Purpul: 	hsl(296, 98%, 18%);
+--Light-Green: hsl(151, 100%, 50%);
+--White: hsl(0, 0%, 100%);
+--Dark-red: hsl(339, 100%, 46%);
+--Pale-Red: #ff2882;
+--Light-Blue: hsl(182, 100%, 51%);
+--gray: hsl(0, 0%, 46%);
+--light-gray: hsl(0, 3%, 83%);
+
+--gradient-1: hsl(270, 59%, 52%);
+
+
+
+/* *=========== Font and typograohy ========* */
+
+--body-font: 'Poppins', sans-serif;
+--border-radius: 0.5rem;
+
+/* ================ Font Weight ============ */
+--font-small: 400;
+--font-medium: 500;
+--font-semi-bold: 600;
+}
+
+body {
+    font-family: var(--body-font);
+}
+
+.main-container  {
+    height: 100%;
+}
+
+.first-display {
+    background-image: url("https://i.postimg.cc/cLGJtSMX/front-background.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: grid;
+    /* height: 95vh; */
+    gap: 2rem;
+    padding: 2rem 0rem 2rem 2rem;
+    grid-template-columns: 25% 70%;
+}
+
+.main-display {
+    width: 100%;
+}
+
+.main-display-top {
+    padding-left: 1.5rem;
+}
+
+.lower-body {
+    border-left: 0.3rem solid var(--light-gray) ;
+    padding-left: 1.5rem;
+    margin-top: 1rem;
+}
+
+
+.main-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    gap: 1rem;
+    background-color: var(--Deep-Purpul);
+    
+}
+
+.info-image img {
+    width: 100%;
+    height: 100%;
+    transition: transform .5s ease;
+}
+
+.info-image {
+    height: 11rem;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-right: 0.3rem solid var(--Light-Green) ;
+}
+
+.info-image:hover img {
+    transform: scale(1.1);
+}
+
+
+
+
+.s-heading  {
+    color: var(--Light-Green);
+    font-size: 0.8rem;
+    font-style: italic;
+    margin-bottom: 0.8rem;
+}
+
+.heading {
+    font-size: 2.5rem;
+    font-weight: var(--font-medium);
+    color: var(--White);
+    margin-bottom: 1rem;
+}
+
+.small {
+    color: var(--White);
+    font-size: 0.8rem;
+    margin-top: 1rem;
+    font-weight: var(--font-medium);
+}
+
+.lower img {
+    width: 2rem;
+}
+
+.lower i {
+    background-color: var(--White);
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+}
+
+
+.alvarez {
+    display: flex;
+    align-items: center;
+}
+
+.alvarez p,
+.fl p  {
+    margin-left: 1rem;
+}
+
+.fl {
+    display: flex;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+
+.fl i {
+    padding: 0.5rem;
+    color: var(--Pale-Red);
+}
+
+.upper p,
+.lower p {
+    color: var(--light-gray);
+    line-height: 1.5rem;
+    font-size: 0.8rem;
+}
+
+.info {
+    padding: 1rem 0;
+}
+
+.small-d-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+/* FIXTURES AND RESULTS */
+
+.fixtures-wrapper {
+    width: 100%;
+    padding: 2rem 0;
+    background-color: var(--White);
+    display: grid;
+    color: var(--Deep-Purpul);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 0.4rem;
+}
+
+.fixtures-container {
+    margin: 0;
+    padding: 0;
+}
+
+.fixtures-container i {
+    font-size: 0.7rem;
+    margin-left: 0.8rem;
+    color: var(--light-gray);
+}
+
+
+h4 {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.wrapper-head {
+    display: grid;
+    justify-items: center;
+}
+span {
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 900;
+    font-style: italic;
+    color: var(--Dark-red);
+}
+
+.flat-logo {
+    width: 10rem;
+}
+
+.wrapper-head p {
+    margin-top: 1rem;
+}
+
+.calender {
+    margin-top: 2rem ;
+    background-color: var(--White);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;    
+    width: 100%;
+    padding: 1rem;
+    display: grid;
+    justify-items: center;
+    color: var(--Deep-Purpul);
+    font-weight: 900;
+}
+
+.calender i {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+}
+
+.result {
+    display: grid;
+    grid-template-columns: 35% 20% 45%;
+    padding: 0.6rem 10%;
+    gap: 0.2rem;
+    font-size: 0.8rem;
+    width: 100%;
+    border-bottom: 0.005px solid var(--light-gray);
+}
+
+.result:hover {
+    background-image: linear-gradient(to right, var(--gradient-1) , var(--Dark-red));
+    color: var(--White);
+}
+
+.result:hover i {
+    transform: translateX(10px);
+    transition: transform 0.3s ease;
+}
+
+
+.result h3 {
+    font-weight: bolder;
+}
+
+.result img {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 0 0.5rem;
+}
+
+.result .home-team h3 {
+    margin-left: 0.5em;
+}
+
+.score {
+    background-color: var(--Deep-Purpul);
+    color: var(--White);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lv {
+    margin: 0 0.5rem;
+    border-left: 1.2px solid var(--gray);
+    height: 20px;
+}
+
+.home-team h3 {
+    margin: 0;
+}
+
+.away-team h3 {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.home-team,
+.away-team {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    font-size: 0.8rem;
+}
+
+.away-team {
+    grid-template-columns: 40% 60%;
+}
+
+.away-team i {
+    margin-left: auto;
+}
+
+.fix {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.small-d-container {
+    margin-top: 1rem;
+    gap: 1rem;
+    height: 5rem;
+}
+
+.discription {
+    margin: 0 0.5rem;
+    font-weight: var(--font-medium);
+    color: var(--White);
+}
+
+.small-display {
+    display: flex;
+    align-items: center;
+    background-color: var(--Deep-Purpul);
+}
+
+.small-d-container img {
+    width: 5.5rem;
+    height: 5rem;
+    border-right: 0.3rem solid var(--Light-Green) ;
+}
+
+
+/* Table  */
+
+.table {
+    margin-top: 3rem;
+}
+.table-body {
+    display: grid;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;    
+    padding: 2rem 1rem;
+    font-size: 0.7rem;
+}
+
+.table-item {
+    display: grid;
+    grid-template-columns: 12.5% 50% 12.5% 12.5% 12.5%;
+    margin: 0.5rem 0;
+}
+
+.first-team {
+    background-color: var(--White);
+    margin: 0 0.5rem;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.3rem;
+}
+
+.top-t {
+    display: grid;
+    grid-template-columns: 12.5% 50% 12.5% 12.5% 12.5%;
+    color: var(--gray);
+    font-weight:500;
+}
+.club-cnt {
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
+.club-cnt img {
+    width: 1.2rem;
+}
+
+
+.table-head {
+    background-color: var(--Pale-Red);
+    height: 7rem;
+    font-size: 0.9rem;
+    border-radius: 0.3rem 0.3rem 0 0  ;
+}
+
+.table-head-image {
+    width: 100%;
+    margin: 0.5rem 0;
+    display: grid;
+    justify-items: center;
+}
+
+.table-head img {
+    width: 10rem;
+    padding-top: 1rem;
+}
+
+.table-item {
+    padding-bottom: 0.5rem;
+    border-bottom: 0.02rem solid var(--light-gray) ;
+}
+
+.table-item p {
+    font-weight: 600;
+}
+
+/**********************************
+             SPOTIFY 
+**********************************/
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px transparent; 
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--light-gray); 
+    border-radius: 10px;
+}
+
+.spotify-container {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    margin: 2rem 0;
+}
+
+.spotify-head {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    background-color: #006836;
+    color: var(--White);
+    border-radius: 0.3rem 0.3rem 0 0;
+}
+
+.fa-spotify {
+    font-size: 1.5rem;
+}
+
+.player {
+    display: flex;
+    margin-top: 1.5rem;
+    justify-content: space-between;
+}
+
+.pla {
+    font-weight: 500;
+}
+
+.spotify-p-logo img {
+    width: 6rem;
+    height: 100%;
+    border-radius: 0.3rem 0 0 0;
+}
+
+.spotify-info {
+    margin: 0.7rem;
+}
+
+.fa-horizontal-rule {
+    width: 3rem;
+}
+
+.fa-horizontal-rule:after {    
+    content: "";
+    display: block;
+    height: 0.3rem;
+    position: absolute;
+    background-color: var(--White);
+    /* transition: width 0.3s ease 0s, left 0.3s ease 0s; */
+    /* transition: all .2s ease-in-out; */
+    width: 4%;
+}
+
+.h-display {
+    display: flex;
+    justify-content: space-between;
+}
+
+.spotify-body {
+    height: 40rem;
+    overflow: hidden;
+    border-radius: 0 0 0.3rem 0.3rem;
+    overflow-y: scroll;
+    background-image: linear-gradient(to bottom, #003b1f , #001109);
+}
+
+.music {
+    display: grid;
+    grid-template-columns: 10% 75% 15%;
+    padding: 1rem;
+    color: var(--White);
+}
+
+.music p {
+    color: rgb(178, 176, 176);
+}
+
+/* Player Card */
+
+.featured-player {
+    background-color: var(--White);
+    margin-top:2rem;
+    border-radius: 0.3rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 0.5rem;
+}
+
+.fp-head {
+    background-image: url("https://i.postimg.cc/MT3TnfdQ/ezgif-com-gif-maker.jpg");
+    background-repeat: round;
+    background-size: contain;
+    border-radius: 0.3rem;
+    height: 10rem;
+    width: 100%;
+    display: grid;
+    padding: 0 0.8rem;
+    align-items: center;
+    color: var(--White);
+    grid-template-columns: 1fr 1fr;
+}
+
+.fp-header {
+    font-weight: 600;
+    margin: 0.4rem 0;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fp-head p,
+.forward {
+    font-size: 0.8rem;
+}
+
+.fp-head-info h3 {
+    font-size: 0.8rem;
+}
+
+.forward {
+    font-weight: 600;
+    font-style: italic;
+    margin: 0.5rem 0;
+}
+
+.flag-cont {
+    display: flex;
+    margin-top: 0.5rem;
+}
+
+.flag {
+    width: 2rem;
+    margin-right: 0.5rem;
+}
+
+.fp-head-image img {
+    height: 10rem;
+    padding-top: 0.5rem;
+}
+
+.fp-body-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    color: var(--Deep-Purpul);
+    font-size: 0.8rem;
+    border-bottom: 0.05rem solid var(--light-gray) ;
+}
+
+.th {
+    color: blue;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+.th img {
+    width: 1.5rem;
+}
+
+.figure {
+    font-weight: 600;
+}
+
+
+
+/* SPONSOR */
+
+.sponsor {
+    margin-top: 2.5rem;
+    height: 8rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("https://i.postimg.cc/RhfN2VLJ/sponsor-background.png");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sponsor img {
+    width: 7rem;
+    cursor: pointer;
+}
+
+.sponsor .easport {
+    height: 5rem;
+    width: 5rem;
+}
+
+
+/* WE ARE ONE TEAM */
+
+.harsh {
+    margin: 2rem 0;
+}
+
+.fl-i {
+    margin: 0.3rem 0;
+}
+
+.harsh,
+.fl-i {
+    display: flex;
+    width: 100%;
+    font-size: 1.2rem;
+    
+}
+
+.hr {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+}
+
+.hrs {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.hr i,
+.view-fixtures i{
+    margin-left: 0.5rem;
+    color: var(--Pale-Red);
+}
+
+.one-team {
+    margin: 2rem 0;
+    padding-bottom: 1.5rem;
+    border-bottom: 0.1rem solid var(--light-gray) ;
+}
+
+.OneTeam-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.teamOne,
+.teamTwo {
+    width: 100%;
+}
+
+.team-image { 
+    width: 100%;
+    height: 17rem;
+    overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+}
+
+.team-image img {
+    width: 100%;
+    transition: transform .5s ease;
+
+}
+
+.tm:after {    
+    content: "";
+    display: block;
+    height: 0.3rem;
+    position: absolute;
+    background-image: linear-gradient(to right, var(--gradient-1) , var(--Dark-red));
+    /* transition: width 0.3s ease 0s, left 0.3s ease 0s; */
+    /* transition: all .2s ease-in-out; */
+    width: 33%;
+}
+
+.team-image:hover img {
+    transform: scale(1.1);
+}
+
+.team-info {
+    margin-top: 2rem;
+}
+
+.team-info span {
+    margin: 1rem 0;
+}
+
+.team-head {
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.fl-i {
+    font-size: 0.7rem;
+}
+
+.fl-i i,
+.fl-i img {
+    font-size: 1rem;
+    margin-right: 1rem;
+    color: var(--Pale-Red);
+}
+
+.view-fixtures {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 0 1rem;
+    font-size: 0.8rem;
+}
+
+
+/*###############################
+         Latest Videos 
+#################################*/
+
+.lv-container {
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: 50% 50%;
+    padding-bottom: 2rem;
+    border-bottom: 0.1rem solid var(--light-gray) ;
+
+}
+
+
+.lv-l-info {
+    height: 12rem;
+    background-repeat: no-repeat;
+    background-size: cover;  
+    color: var(--White);
+    padding: 1.7rem;
+    width: 100%;
+    background-image: url("https://i.postimg.cc/T1Z39M82/ezgif-com-gif-maker-jpg.png");
+    line-height: 1.8rem;
+}
+
+.lv-l-info h1 {
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+}
+
+.lv-l-image {
+    height: 15rem;
+    overflow: hidden;
+}
+
+.lv-l-image img {
+    width: 100%;
+    transition: transform .5s ease;
+}
+
+.lv-l-image:hover img {
+    transform: scale(1.1);
+}
+
+.lv-r-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+}
+
+.lv-rg {
+    margin-bottom: 1.5rem;
+    line-height: 1.6rem;
+}
+
+.lv-r-container img {
+    width: 13rem;
+}
+
+.lv-rg-image {
+    margin-bottom: 0.5rem;
+    height: 7rem;
+    overflow: hidden;
+}
+
+.lv-rg-image img {
+    width: 100%;
+    transition: transform .5s ease;
+}
+
+.lv-rg-image:hover img {
+    transform: scale(1.1);
+}
+
+
+
+/* Latest News */
+
+.latest-news-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0.5rem;
+    padding-bottom: 2rem;
+    border-bottom: 0.1rem solid var(--light-gray) ;
+}
+
+.ln-image {
+    height: 11rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+.ln-image img,
+.pl30-ln-image img {
+    width: 100%;
+    transition: transform .5s ease;
+}
+
+.ln-image:hover img,
+.pl30-ln-image:hover img {
+    transform: scale(1.1);
+}
+
+
+
+/* PL 30 */
+
+.pl30-container {
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-bottom: 2rem;
+    border-bottom: 0.1rem solid var(--light-gray) ;
+}
+
+.pl30-ln-image {
+    height: 8.4rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+.ln-info {
+    padding-top: 1rem;
+    padding-left: 1rem;
+}
+
+
+/* Latest FPL News */
+
+/* NIKE */
+
+.nike-ball-container {
+    background-image: linear-gradient(to right, rgb(247, 34, 54) , rgb(250, 82, 1) );
+    display: grid;
+    height: 15rem;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 30% 70%;
+}
+
+.ball img {
+    width: 12rem;
+}
+
+.ball-info {
+    /* transform: skew(10deg); */
+    align-content: center;
+    padding-right: 5rem;
+    color: var(--White);
+}
+
+.ball-info p {
+    font-size: 0.9rem;
+}
+
+.btn {
+    margin: 1rem 0;
+    width: 10rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    border-radius: 0.2rem;
+    background-color: var(--Deep-Purpul);
+}
+
+.btn:hover i {
+    transform: translateX(10px);
+    transition: transform 0.3s ease;
+
+}
+
+.bottom-sponsor {
+    width: 100%;
+    text-align: center;
+}
+
+.bottom-sponsor ul{
+    margin-top: 2.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0 1rem;
+    font-size: 0.8rem;
+    justify-content: space-between;
+}
+
+.bottom-sponsor ul img {
+    width: 100%;
+    cursor: pointer;
+}
+
+.bottom-sponsor li {
+    margin-right: 0;
+    margin-bottom: 1rem;
+    width: 10%;
+    cursor: pointer;
+
+}
+
+button {
+    display: none;
+}
+

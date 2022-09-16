@@ -1,0 +1,75 @@
+:root {
+    /* ##Primary */
+--Deep-Purpul: 	hsl(296, 100%, 12%);
+--light-Purpul: 	hsl(296, 98%, 18%);
+--Light-Green: hsl(151, 100%, 50%);
+--White: hsl(0, 0%, 100%);
+--Dark-red: hsl(339, 100%, 46%);
+--Pale-Red: #ff2882;
+--Light-Blue: hsl(182, 100%, 51%);
+--gray: hsl(0, 0%, 46%);
+--light-gray: hsl(0, 3%, 83%);
+
+--gradient-1: hsl(270, 59%, 52%);
+
+
+
+/* *=========== Font and typograohy ========* */
+
+--body-font: 'Poppins', sans-serif;
+--border-radius: 0.5rem;
+
+/* ================ Font Weight ============ */
+--font-small: 400;
+--font-medium: 500;
+--font-semi-bold: 600;
+}
+
+
+footer {
+    margin-top: 5rem;
+    color: var(--White);
+}
+
+.footer-container {
+    background-image: url("https://i.postimg.cc/T1Z39M82/ezgif-com-gif-maker-jpg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2rem;
+    line-height: 2rem;
+}
+
+.list-head {
+    font-weight: 700;
+}
+
+li {
+    list-style: none;
+}
+
+.first-foot,
+.second-foot,
+.third-foot,
+.fourth-foot {
+    display: flex;
+    height: 15rem;
+    margin-top: 1rem;
+    margin-bottom: 7rem;
+}
+
+ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* padding-bottom: 2rem;
+    border-bottom: 0.005px solid var(--light-gray); */
+}
+
+.second-foot ul,
+.third-foot .none-g {
+    display: block;
+}
+
+li {
+    margin-right: 6rem;
+    font-weight: 400;
+}
